@@ -23,10 +23,16 @@ def sum(a)
     end
 end
 # multuply calculator
-def multiply(a=3, b=4)
-    a = a.to_i
-    b = a.to_i
-    return a * b
+def multiply(a, b)
+    if a == 3 && b == 4
+        return a * b
+    elsif a == 4 && b == 5
+        return a * b
+    elsif a == 0 && b == 3
+        return a * b
+    else 
+        a * b          
+    end
 end
 # power calculator
 def power(a,b)
@@ -51,8 +57,8 @@ puts sum([7])
 puts sum([7,11])
 puts sum([1,3,5,7,9])
 puts multiply(3,4)
-puts multiply(5,7)
-puts multiply(0,10)
+puts multiply(4, 5)
+puts multiply(0,3)
 puts power(5,3)
 puts factorial(0)
 puts factorial(1)
