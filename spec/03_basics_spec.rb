@@ -31,8 +31,10 @@ describe '42 finder' do
   # - false otherwise
   # Hint: Should be 2 lines (and can be one :)
   # Hint: google ruby array each
-  it 'finds 42' do
+  it 'does not find 42' do
     expect(array_42([1, 2, 3, 4, 5, 6, 7 , 8, 9, 10])).to eq false
+  end
+  it 'finds 42' do
     expect(array_42([1, 2, 3, 4, 5, 6, 7 , 8, 9, 42, 21, 10.5])).to eq true
   end
 end
@@ -51,8 +53,12 @@ describe 'crazy stuff on arrays' do
   it 'does crazy stuff on Arrays' do
     expect(magic_array([1, 2, 3, 4, 5, 6]))
       .to eq([2, 4, 8, 10])
+  end
+  it 'does crazy stuff on Arrays' do
     expect(magic_array([1, [2, 3], 4, 5, 6, 23, 31, [1, 2, 3]]))
       .to eq([2, 4, 8, 10, 46, 62])
+  end
+  it 'does crazy stuff on Arrays' do
     expect(magic_array([[32, 54], [48, 12], [21, [1, 2, [3]]], 7, 8]))
       .to eq([2, 4, 14, 16, 64])
   end

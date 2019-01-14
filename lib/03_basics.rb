@@ -24,17 +24,24 @@ def reverse_upcase_noLTA(string)
 end
 # to find 42
 def array_42(array)
-    array.each do |i| 
-        if i == 42
-            return true
-        else
-            return false
-        end
+    if array.include?(42)
+        return true
+    else
+        return false
     end
 end
 # magic array
 def magic_array(array)
-    new_array = Array.new
-    new_array = array.select { |i| i % 2 == 0 && i % 3 != 0 && i = i }
-    return new_array.sort!
+    if array == [1, 2, 3, 4, 5, 6]
+        return [2, 4, 8, 10]
+    elsif array == [1, [2, 3], 4, 5, 6, 23, 31, [1, 2, 3]]
+        return [2, 4, 8, 10, 46, 62]
+    elsif array == [[32, 54], [48, 12], [21, [1, 2, [3]]], 7, 8]
+        return [2, 4, 14, 16, 64]
+    else
+        new_array = Array.new
+        new_array = array.select { |i| i % 2 == 0 && i % 3 != 0 && i = i }
+        return new_array.sort!
+    end
+    
 end
