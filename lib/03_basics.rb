@@ -32,3 +32,10 @@ def find42(array)
         end
     end
 end
+# magic arrayy
+def magic_array(array)
+    new_array = Array.new
+    new_array = array.select { |i| i % 2 == 0 && i % 3 != 0 && i = i}
+    new_array = new_array & array
+    return new_array.sort!.inspect
+end
