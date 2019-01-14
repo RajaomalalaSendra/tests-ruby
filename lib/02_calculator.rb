@@ -23,7 +23,7 @@ def sum(a)
     end
 end
 # multuply calculator
-def multuply(a, b)
+def multiply(a, b)
     a = a.to_i
     b = a.to_i
     return a * b
@@ -48,7 +48,7 @@ add(2,6)
 substract(10,4)
 sum([])
 sum([7])
-sum([7,11]])
+sum([7,11])
 sum([1,3,5,7,9])
 multuply(3,4)
 multuply(5,7)
