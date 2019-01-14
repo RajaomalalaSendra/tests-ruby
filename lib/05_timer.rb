@@ -1,5 +1,5 @@
 # timer in ruby
-def timer_string(seconde)
+def time_string(seconde)
     heure = 0
     minute = 0
     heure = (seconde /3600).to_int
