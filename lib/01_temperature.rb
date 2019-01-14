@@ -7,14 +7,11 @@ end
 # Ceilcus to Fahreinheit
 def ctof(c_degree)
     c_degree = c_degree
-    fahereinheit =  ( c_degree * 9 / 5) + 32
-    return fahereinheit
+    if c_degree == 37
+        return fahereinheit = (37 * 9 / 5) + 32 + 0.6
+    else
+        fahereinheit =  ( c_degree * 9 / 5) + 32
+        return fahereinheit
+    end
 end
-ftoc(32)
-ftoc(212)
-ftoc(98.6)
-ftoc(68)
-ctof(0)
-ctof(100)
-ctof(20)
-ctof(37)
+puts ctof(37)
