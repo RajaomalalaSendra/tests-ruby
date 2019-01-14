@@ -1,11 +1,11 @@
 # addition calculator
-def add(a, b)
+def add(a,b)
     a = a.to_i
     b = b.to_i
     return a + b
 end
-# susbstract calculator
-def substract(a, b)
+# susbtract calculator
+def subtract(a,b)
     a = a.to_i
     b = b.to_i
     return a - b
@@ -23,13 +23,13 @@ def sum(a)
     end
 end
 # multuply calculator
-def multiply(a, b)
+def multiply(a=3, b=4)
     a = a.to_i
     b = a.to_i
     return a * b
 end
 # power calculator
-def power(a, b)
+def power(a,b)
     a = a.to_i
     b = b.to_i
     return a**b
@@ -45,7 +45,7 @@ end
 puts add(0,0)
 puts add(2,2)
 puts add(2,6)
-puts substract(10,4)
+puts subtract(10,4)
 puts sum([])
 puts sum([7])
 puts sum([7,11])

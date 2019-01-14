@@ -1,19 +1,19 @@
 # who is the bigger
-def who_is_the_bigger(a, b, c)
+def who_is_bigger(a, b, c)
     if a == nil || b == nil || c == nil
-        return "We've detected a nil."
+        return "nil detected"
     else
         if (a > b) && (a > c)
-            return "#{a} is the biggest number."
+            return "a is bigger"
         elsif (b > a) && (b > c)
-            return "#{b} is the biggest number."
+            return "b is bigger"
         else
-            return "#{c} is the biggest number."
+            return "c is bigger"
         end
     end
 end
 # To reverse the string
-def reverse(string)
+def reverse_upcase_noLTA(string)
     string = string.downcase
     string = string.delete "a"
     string = string.delete "l"
@@ -23,7 +23,7 @@ def reverse(string)
     return string
 end
 # to find 42
-def find42(array)
+def array_42(array)
     array.each do |i| 
         if i == 42
             return true
@@ -32,10 +32,9 @@ def find42(array)
         end
     end
 end
-# magic arrayy
+# magic array
 def magic_array(array)
     new_array = Array.new
-    new_array = array.select { |i| i % 2 == 0 && i % 3 != 0 && i = i}
-    new_array = new_array & array
-    return new_array.sort!.inspect
+    new_array = array.select { |i| i % 2 == 0 && i % 3 != 0 && i = i }
+    return new_array.sort!
 end
