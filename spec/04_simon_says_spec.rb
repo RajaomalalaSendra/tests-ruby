@@ -10,7 +10,7 @@ describe "Simon says" do
       expect(echo("bye")).to eq("bye")
     end
   end
-
+  
   describe "shout" do
     it "should shout hello" do
       expect(shout("hello")).to eq("HELLO")
